@@ -1,45 +1,98 @@
 import React, { Component } from 'react';
 import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import './Carouselstyles.css';
 
-import compra from '../../assets/compra.jpg';
-import recicla from '../../assets/recicla.jpg';
-import venta from '../../assets/venta.jpg';
-import ecologia from '../../assets/ecologia.jpg';
-import planeta from '../../assets/planeta.jpg';
+import compra from '../Assets/compra.jpg';
+import venta from '../Assets/venta.jpg';
+import recicla from '../Assets/recicla.jpg';
+import ecologia from '../Assets/ecologia.jpg';
+import planeta from '../Assets/planeta.jpg';
 
 class MyCarousel extends Component {
     render() {
         return (
-            <Carousel
-                showArrows={true}
-                showThumbs={false}
-                infiniteLoop={true}
-                autoPlay={true}
-                interval={3000}
-                transitionTime={500}
-                style={{ minHeight: "300px" }} 
+            <div
+                style={{
+                    width: "100%",      
+                    maxWidth: "none",        
+                    margin: "0 auto"     
+                }}
             >
-                <div>
-                    <img src={compra} alt="Compra" />
-                    <p className="legend">Compra</p>
-                </div>
-                <div>
-                    <img src={venta} alt="Venta" />
-                    <p className="legend">Venta</p>
-                </div>
-                <div>
-                    <img src={recicla} alt="Recicla" />
-                    <p className="legend">Recicla</p>
-                </div>
-                <div>
-                    <img src={ecologia} alt="Ecología" />
-                    <p className="legend">Reutiliza</p>
-                </div>
-                <div>
-                    <img src={planeta} alt="Planeta" />
-                    <p className="legend">Protege el planeta</p>
-                </div>
-            </Carousel>
+                <Carousel
+                    showArrows={true}
+                    showThumbs={false}
+                    infiniteLoop={true}
+                    autoPlay={true}
+                    interval={3000}
+                    transitionTime={500}
+                    style={{
+                        minHeight: "50vh",
+                        maxHeight: "50vh",   
+                    }}
+                >
+                    <div>
+                        <img 
+                            src={compra} 
+                            alt="Compra" 
+                            style={{
+                                width: "100%",       
+                                height: "auto",      
+                                objectFit: "cover",  
+                            }}  
+                        />
+                        <p className="legend">Compra</p>
+                    </div>
+                    <div>
+                        <img 
+                            src={venta} 
+                            alt="Venta" 
+                            style={{
+                                width: "100%",
+                                height: "auto",
+                                objectFit: "cover",
+                            }}  
+                        />
+                        <p className="legend">Venta</p>
+                    </div>
+                    <div>
+                        <img 
+                            src={recicla} 
+                            alt="Recicla" 
+                            style={{
+                                width: "100%",
+                                height: "auto",
+                                objectFit: "cover",
+                            }} 
+                        />
+                        <p className="legend">Recicla</p>
+                    </div>
+                    <div>
+                        <img 
+                            src={ecologia} 
+                            alt="Ecología" 
+                            style={{
+                                width: "100%",
+                                height: "auto",
+                                objectFit: "cover",
+                            }}  
+                        />
+                        <p className="legend">Reutiliza</p>
+                    </div>
+                    <div>
+                        <img 
+                             src={planeta} 
+                            alt="Planeta" 
+                            style={{
+                                width: "100%",
+                                height: "auto",
+                                objectFit: "cover",
+                            }}  
+                        />
+                        <p className="legend">Protege el planeta</p>
+                    </div>
+                </Carousel>
+            </div>
         );
     }
 }
