@@ -32,64 +32,49 @@ class MyCarousel extends Component {
                     }}
                 >
                     <div>
-                        <img 
-                            src={compra} 
-                            alt="Compra" 
-                            style={{
+                        <img src={compra} alt="Compra" style={{
                                 width: "100%",       
                                 height: "auto",      
                                 objectFit: "cover",  
                             }}  
                         />
-                        <p className="legend">Compra</p>
+                        <div className="carousel-text">Compra</div>
                     </div>
                     <div>
-                        <img 
-                            src={venta} 
-                            alt="Venta" 
-                            style={{
+                        <img src={venta} alt="Venta" style={{
                                 width: "100%",
                                 height: "auto",
                                 objectFit: "cover",
                             }}  
                         />
-                        <p className="legend">Venta</p>
+                        <div className="carousel-text">Venta</div>
                     </div>
                     <div>
-                        <img 
-                            src={recicla} 
-                            alt="Recicla" 
-                            style={{
+                        <img src={recicla} alt="Recicla" style={{
                                 width: "100%",
                                 height: "auto",
                                 objectFit: "cover",
                             }} 
                         />
-                        <p className="legend">Recicla</p>
+                        <div className="carousel-text">Recicla</div>
                     </div>
                     <div>
-                        <img 
-                            src={ecologia} 
-                            alt="Ecología" 
-                            style={{
+                        <img src={ecologia} alt="Ecología" style={{
                                 width: "100%",
                                 height: "auto",
                                 objectFit: "cover",
                             }}  
                         />
-                        <p className="legend">Reutiliza</p>
+                        <div className="carousel-text">Reutiliza</div>
                     </div>
                     <div>
-                        <img 
-                             src={planeta} 
-                            alt="Planeta" 
-                            style={{
+                        <img src={planeta} alt="Planeta" style={{
                                 width: "100%",
                                 height: "auto",
                                 objectFit: "cover",
                             }}  
                         />
-                        <p className="legend">Protege el planeta</p>
+                        <div className="carousel-text">Protege el planeta</div>
                     </div>
                 </Carousel>
             </div>
