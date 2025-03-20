@@ -2,46 +2,53 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #e0f2be;
+    background-color: #ffffff;
     padding: 10px 20px;
-  }
-  
-  .leftSection {
+}
+
+.leftSection {
     display: flex;
     align-items: center;
-  }
-  
-  .icon {
+}
+
+.icon {
     font-size: 20px;
     margin-right: 10px;
-  }
-  
-  .searchBar {
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .links span {
-    margin: 0 10px;
+    color: black;
+}
+
+.searchBar {
+    background-color: #D9FFAB;
+    border: 1px solid #D9FFAB;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.links {
+    display: flex;
+    gap: 15px;
+}
+
+.links span {
     cursor: pointer;
-  }
-  
-  .rightSection {
+    font-weight: bold;
+}
+
+.rightSection {
     display: flex;
     align-items: center;
-  }
-  
-  .loginButton {
-    background-color: #a8d5ba;
+    gap: 10px;
+}
+
+.loginButton {
+    background-color: #ABFFBC;
     padding: 5px 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-right: 10px;
-  }
-  
-  .loginButton:hover {
+}
+
+.loginButton:hover {
     background-color: #8ec3a5;
-  }
-  
+}
