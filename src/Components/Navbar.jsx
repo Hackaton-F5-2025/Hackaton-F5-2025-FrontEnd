@@ -1,26 +1,26 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { FaHome, FaShoppingCart } from "react-icons/fa";
+import styles from './navbar.module.css';
+import { FaHome, FaShoppingCart } from 'react-icons/fa';
 
-const Navbar = () => {
+function Navbar() {
   return (
-    <nav className="navbar">
-      <Link to="/" className="nav-button">
-        <FaHome className="icon" />
-      </Link>
-      {/* Barra de búsqueda (crear)
-      <SearchBar /> */}
-
-      <button className="nav-button">Alquiler</button>
-      <Link to="/repuestos" className="nav-button">Repuestos</Link>
-      <button className="nav-button">Residuos Creativos</button>
-      <button className="nav-button">Inicio de sesión</button>
-
-      <button className="nav-button">
-        <FaShoppingCart className="icon" />
-      </button>
+    <nav className={styles.navbar}>
+      <div className={styles.leftSection}>
+        <FaHome className={styles.icon} />
+        <input type="text" placeholder="Hinted search text" className={styles.searchBar} />
+      </div>
+      <div className={styles.links}>
+        <span>Compra</span>
+        <span>Venta</span>
+        <span>Componentes</span>
+        <span>Reparación</span>
+      </div>
+      <div className={styles.rightSection}>
+        <button className={styles.loginButton}>Inicio sesión</button>
+        <FaShoppingCart className={styles.icon} />
+      </div>
     </nav>
   );
-};
+}
 
 export default Navbar;
