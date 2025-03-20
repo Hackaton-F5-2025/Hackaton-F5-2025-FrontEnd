@@ -9,26 +9,32 @@ const ProductList = () => {
 
   // Datos de ejemplo
   const products = [
+    // falta por incorporar brand_id
     {
       id: 1,
       name: 'Motor de Lavadora Samsung',
+      description: 'Motor compatible con modelos Samsung WF-1234, WF-5678',
+      amount: 1,
       price: 89.99,
       image: 'https://via.placeholder.com/300',
-      description: 'Motor compatible con modelos Samsung WF-1234, WF-5678',
-      brand: 'Samsung',
-      models: ['WF-1234', 'WF-5678'],
-      category: 'Lavadoras'
+      brand_id: 'Samsung',
+      // models: ['WF-1234', 'WF-5678'],
+      // category: 'Lavadoras'
+      state: true,
+      
     },
     {
       id: 2,
       name: 'Compresor Refrigerador LG',
+      description: 'Compresor compatible con modelos LG RF-1234, RF-5678',
+      amount: 3,
       price: 149.99,
       image: 'https://via.placeholder.com/300',
-      description: 'Compresor compatible con modelos LG RF-1234, RF-5678',
-      brand: 'LG',
-      models: ['RF-1234', 'RF-5678'],
-      category: 'Refrigeradores'
-    }
+      brand_id: 'LG',
+      // models: ['RF-1234', 'RF-5678'],
+      // category: 'Refrigeradores'
+      state: true
+    }    
   ];
 
   return (
@@ -90,9 +96,12 @@ const ProductList = () => {
                 <Typography variant="body2" color="text.secondary" paragraph>
                   {product.description}
                 </Typography>
+                <Typography variant="body2" color="text.secondary" paragraph>
+                  {product.amount}
+                </Typography>
                 <Box sx={{ mb: 2 }}>
-                  <Chip label={product.brand} size="small" sx={{ mr: 1 }} />
-                  <Chip label={product.category} size="small" />
+                  <Chip label={product.brand_id} size="small" sx={{ mr: 1 }} />
+                  {/* <Chip label={product.category} size="small" /> */}
                 </Box>
                 <Typography variant="h6" color="primary">
                   ${product.price}
