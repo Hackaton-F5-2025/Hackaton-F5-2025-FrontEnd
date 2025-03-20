@@ -3,11 +3,11 @@ import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './Carouselstyles.css';
 
-import compra from '../Assets/compra.jpg';
-import venta from '../Assets/venta.jpg';
-import recicla from '../Assets/recicla.jpg';
-import ecologia from '../Assets/ecologia.jpg';
-import planeta from '../Assets/planeta.jpg';
+import compra from '../Assets/compra.jpeg';
+import venta from '../Assets/venta.jpeg';
+import recicla from '../Assets/recicla.jpeg';
+import ecologia from '../Assets/ecologia.jpeg';
+import planeta from '../Assets/planeta.jpeg';
 
 class MyCarousel extends Component {
     render() {
