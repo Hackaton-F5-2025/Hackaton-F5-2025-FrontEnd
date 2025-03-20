@@ -1,24 +1,23 @@
 import React from "react";
-import { FaInstagram, FaYoutube, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import styles from './footer.module.css';
+import { FaXTwitter, FaInstagram, FaYoutube, FaLinkedin } from 'react-icons/fa6';
 
-const Footer = () => {
+function Footer() {
   return (
-    <footer className="footer-container">
-      <div className="footer-links">
-        <a href="#">Use Cases</a>
-        <a href="#">Explore</a>
+    <footer className={styles.footer}>
+      <div className={styles.links}>
+        <span>Use cases</span>
+        <span>Explore</span>
       </div>
-      <div className="footer-copyright">
-        &copy; {new Date().getFullYear()} EcoPart. All rights reserved.
-      </div>
-      <div className="footer-social">
-        <a href="#"><FaXTwitter /></a>
-        <a href="#"><FaInstagram /></a>
-        <a href="#"><FaYoutube /></a>
-        <a href="#"><FaLinkedin /></a>
+      <div className={styles.copyright}>© Ecopart 2025</div>
+      <div className={styles.socialIcons}>
+        <FaXTwitter className={styles.icon} />
+        <FaInstagram className={styles.icon} />
+        <FaYoutube className={styles.icon} />
+        <FaLinkedin className={styles.icon} />
       </div>
     </footer>
   );
-};
+}
 
 export default Footer;
