@@ -1,9 +1,12 @@
 import { Container, Typography, Grid, Card, CardContent, CardMedia, Button, TextField, Box } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { Search as SearchIcon } from '@mui/icons-material';
+import MyCarousel from '../Components/Carousel';
 
 const Home = () => {
   return (
+    <div>
+    <MyCarousel />
     <Container maxWidth="lg" sx={{ mt: 4 }}>
       <Typography variant="h3" component="h1" gutterBottom align="center">
         Repuestos para Electrodomésticos
@@ -107,6 +110,7 @@ const Home = () => {
         </Grid>
       </Grid>
     </Container>
+    </div>
   );
 };
 
